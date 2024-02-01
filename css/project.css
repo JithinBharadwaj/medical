@@ -1,0 +1,407 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+
+  }
+
+  header img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0c0c0c;
+    padding: 10px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+  }
+
+  nav a:hover {
+    background-color: #777;
+  }
+  .call-button {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #060f2d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .call-button:hover {
+    background-color: #030a04;
+}
+  .map-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #060f2d;
+    color: white;
+    border-radius: 5px;
+}
+
+.map-button:hover {
+    background-color: #030a04;
+}
+.Login-button {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #060f2d;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 950px;
+}
+.Login-button:hover {
+    background-color: #030a04;
+}
+.Signup-button {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #060f2d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .Signup-button:hover {
+    background-color: #030a04;
+}
+h1 {
+  font-size: 2.1rem;
+  line-height: 1.4;
+  letter-spacing: 0.5rem;
+  text-align: center;
+  color: #161A30;
+  margin-top: 50px;
+  animation-name: ani;
+  animation-duration: 5s;
+  position: relative;
+  animation-iteration-count: infinite;
+}
+@keyframes ani {
+  0%{background-color:#232D3F 0px }
+  50%{background-color: #232D3F 10px }
+  75%{background-color:top #232D3F 10px}
+  100%{background-color:bottom #232D3F 10px}
+}
+.sec_1{
+  min-height: 550px;
+}
+.maindiv{
+  width: 70%;
+  height: 400px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background-image: url(https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100% 100%;
+  margin-top: 150px;
+  box-shadow: 1px 2px 10px 5px #31304D;
+  animation: slider 15s infinite linear;
+}
+@keyframes slider {
+  0%{background-image: url(https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
+  35%{background-image: url(https://images.pexels.com/photos/3376790/pexels-photo-3376790.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
+  50%{background-image: url(https://images.pexels.com/photos/11661531/pexels-photo-11661531.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
+  75%{background-image: url(https://images.pexels.com/photos/8413213/pexels-photo-8413213.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);}
+  100%{background-image: url(https://media.istockphoto.com/id/1368148566/photo/smiling-doctor-with-senior-patient.jpg?s=2048x2048&w=is&k=20&c=56PO3r81PrUGFvOYfRlQLP_xz8-vYtbvk-rx2roVLxw=);}
+  
+}
+.container{
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  height: 500px;
+  margin: 50px;
+  box-shadow: 5px 5px 20px black;
+  overflow: hidden;
+  position: relative;
+}
+img{
+  height: 500px;
+  width: 350px;
+  border-radius: 3px;
+}
+.intro{
+  height: 70px;
+  width: 250px;
+  padding: 6px;
+  box-sizing: 6px;
+  position: relative;
+  bottom: 500px;
+  background: rgb(27,27,27,.5);
+  color: white;
+  transition: .5s;
+}
+h1{
+  margin: 10px;
+  font-size: 40px;
+}
+.into p{
+  font-size: 20px;
+  margin: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+span{
+  font-weight: bold;
+}
+.card:hover{
+  cursor: pointer;
+}
+.card:hover .intro{
+  height: 220px;
+  bottom: 240px;
+  background: black;
+}
+.card:hover p{
+  opacity: 1;
+  visibility: visible;
+}
+.card:hover img{
+  transform: scale(1.1) rotate(-3deg);
+}
+#parent{
+  position: relative;width: 500px; height: 500px; 
+  align-items: center;
+  padding-right: 500px;
+}
+.image{
+  align-items: center;
+}
+.red{
+  background: #F875AA; width: 200px; height: 200px;position: absolute;bottom: 10px; right: 10px;
+  padding-right: 100px;
+}
+.green{
+  background: #F875AA; width: 200px; height: 200px; position: absolute; top: 10px; left: 510px;z-index: 12;
+}
+#parent img{
+  position: absolute; width: 400px;height: 400px;top:50px; right: 50px;z-index: 12;
+}
+body2{
+  margin: 0;
+  margin-bottom: 25rem;
+}
+.p2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+.img-wrapper{
+  position:relative;
+  overflow: hidden;
+}
+.img-wrapper > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+.img-wrapper > .content {
+  position: absolute;
+  inset: 0;
+  font-size: 2rem;
+  padding: 1rem;
+  background: rgba(255,255,255,.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-wrapper > img.
+.img-wrapper > .content{
+  transition: 200ms ease-in-out;
+}
+.img-wrapper:hover > img.blur{
+  filter: blur(5px);
+}
+.img-wrapper:hover > img.Zoom{
+  transform: scale(1,1);
+}
+.img-wrapper> .content.fade {
+  opacity: 0;
+}
+.img-wrapper:hover > .content.fade {
+  opacity: 1;
+}
+
+.img-wrapper> .content.side-left.fade {
+  transform: translateX( -100%);
+}
+.img-wrapper:hover > .content.content.side-left.fade {
+  transform: translateX(0);
+}
+footer{
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to right,#00093c,#2d0b00);
+  color: #fff;
+  padding: 50px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.footer-div{
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+.col:nth-child(2), .col:nth-child(3){
+  flex-basis: 15%;
+}
+.Logo2{
+  height: 100px;
+  width: 100px;
+  margin-bottom: 30px;
+}
+.col h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+form{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+form.far{
+  font-size: 18px;
+  margin-right: 10px;
+}
+form input{
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor:pointer;
+}
+form button .fas{
+  font-size: 16px;
+  color: #ccc;
+}
+.social-icons .fab{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #ccc;
+  margin-right: 15px;
+  cursor: pointer;
+}
+hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+.Copyright{
+  text-align: center;
+}
+.underline{
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.underline span{
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+@keyframes moving{
+  0%{
+    left: -20px;
+  }
+  100%{
+    left: 100%;
+  }
+}
+@media(max-width:700px){
+  footer{
+    bottom: unset;
+  }
+  .col{
+    flex-basis: 100%;
+  }
+  .col:nth-child(2), .col:nth-child(3){
+    flex-basis: 100%;
+  }
+}

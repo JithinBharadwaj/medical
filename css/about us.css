@@ -1,0 +1,358 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    background-color: #0a0a0a;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+
+  }
+
+  header img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #0c0c0c;
+    padding: 10px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+  }
+
+  nav a:hover {
+    background-color: #777;
+  }
+  .call-button {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #060f2d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .call-button:hover {
+    background-color: #030a04;
+}
+  .map-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #060f2d;
+    color: white;
+    border-radius: 5px;
+}
+
+.map-button:hover {
+    background-color: #030a04;
+}
+.Login-button {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  background-color: #060f2d;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 950px;
+}
+.Login-button:hover {
+    background-color: #030a04;
+}
+.Signup-button {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #060f2d;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .Signup-button:hover {
+    background-color: #030a04;
+}
+.About-us{
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: row;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+}
+.row{
+  display: flex;
+  flex-wrap:wrap;
+}
+.flex{
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.About-us h2{
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #333;
+}
+.About-us h3{
+  font-size: 22px;
+  color: #888;
+  margin-bottom: 8px;
+}
+.About-us p{
+  font-size: 18px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 20px;
+}
+.About-us img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+.Social-links{
+  margin-bottom: 20px;
+}
+.Social-links a{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  color: #fff;
+  background-color: #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: all 0.4s ease;
+}
+.Social-links a:hover{
+  transform: translateY(-3px);
+}
+.btn{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: #333;
+  transition: all 0.4s ease;
+}
+.btn:hover{
+  transform: translateY(-3px);
+}
+@media screen and (max-width: 768px){
+  .row{
+    flex-direction: column;
+  }
+  .flex{
+    max-width: 100%;
+  }
+  .About-us h2{
+    font-size: 31px;
+  }
+  .About-us p{
+    font-size: 16px;
+  }
+  .Social-links a{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  .btn{
+    font-size: 16px;
+    padding: 8px 16px;
+    margin-bottom: 30px;
+  }
+}
+.Container{
+  display: flex;
+  justify-content: space-evenly;
+}
+.green{
+  background: #060f2d; width: 100%px; height: 100px; 
+}
+.green h1{
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  font-size: 70px;
+}
+.post {
+  background-color: #FFFF;
+  margin: 80px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(25, 25, 25, 0.5);
+  width: 20%;
+}
+.post-content {
+  color: #29ADB2;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+footer{
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(to right,#00093c,#2d0b00);
+  color: #fff;
+  padding: 50px 0 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+.footer-div{
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+.col:nth-child(2), .col:nth-child(3){
+  flex-basis: 15%;
+}
+.Logo2{
+  height: 100px;
+  width: 100px;
+  margin-bottom: 30px;
+}
+.col h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+}
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+form{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+form.far{
+  font-size: 18px;
+  margin-right: 10px;
+}
+form input{
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor:pointer;
+}
+form button .fas{
+  font-size: 16px;
+  color: #ccc;
+}
+.social-icons .fab{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: #ccc;
+  margin-right: 15px;
+  cursor: pointer;
+}
+hr{
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
+}
+.Copyright{
+  text-align: center;
+}
+.underline{
+  width: 100%;
+  height: 5px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.underline span{
+  width: 15px;
+  height: 100%;
+  background: #fff;
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+@keyframes moving{
+  0%{
+    left: -20px;
+  }
+  100%{
+    left: 100%;
+  }
+}
+@media(max-width:700px){
+  footer{
+    bottom: unset;
+  }
+  .col{
+    flex-basis: 100%;
+  }
+  .col:nth-child(2), .col:nth-child(3){
+    flex-basis: 100%;
+  }
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="/css/careers.css">
+</head>
+<body>
+  <header>
+    <div>
+        <img src="/images/Microden-logo-1.png" alt="Logo">
+        <a class = "call-button" href="tel:+919177850186">call</a>
+        <a class="map-button" href="https://www.google.com/maps/place/LP+Tower/@17.4449436,78.3827933,18z/data=!3m1!4b1!4m20!1m13!4m12!1m4!2m2!1d78.3840746!2d17.4450779!4e1!1m6!1m2!1s0x3bcb93e0017fdc3d:0x25e6d758a98efca8!2sC9VM%2BXJG+LP+Tower,+HUDA+Techno+Enclave,+HITEC+City,+Hyderabad,+Telangana+500081!2m2!1d78.3840808!2d17.444941!3m5!1s0x3bcb93e0017fdc3d:0x25e6d758a98efca8!8m2!3d17.444941!4d78.3840808!16s%2Fg%2F11fxxlkcrg?entry=ttu" target="_blank">Open Map</a>
+    </div>
+    <div>
+        <a class="Login-button" href="login.html">Login</a>
+        <a class="Signup-button" href="signup.html">Signup</a>
+        </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="About us.html" target="_blank">About</a>
+    <a href="services.html" target="_blank">Services</a>
+    <a href="blog.html" target="_blank">Blog</a>
+    <a href="careers.html" target="_blank">Careers</a>
+    <a href="Contact us.html">Contact us</a>
+  </nav>
+  <div class="container">
+    <div class="form-header">
+      <h2>Contact Us</h2>
+    </div>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <div class="error-message" id="nameError"></div>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <div class="error-message" id="emailError"></div>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <div class="error-message" id="messageError"></div>
+
+      <button type="submit" onclick="validateForm()">Submit</button>
+    </div>
+  </div>
+
+  <script>
+    function validateForm() {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      var nameError = document.getElementById('nameError');
+      var emailError = document.getElementById('emailError');
+      var messageError = document.getElementById('messageError');
+      nameError.innerHTML = "";
+      emailError.innerHTML = "";
+      messageError.innerHTML = "";
+      if (name.trim() === "") {
+        nameError.innerHTML = "Name is required";
+        return false;
+      }
+
+      if (email.trim() === "") {
+        emailError.innerHTML = "Email is required";
+        return false;
+      }
+      var emailRegex = /^\S+@\S+\.\S+$/;
+      if (!emailRegex.test(email)) {
+        emailError.innerHTML = "Invalid email address";
+        return false;
+      }
+
+      if (message.trim() === "") {
+        messageError.innerHTML = "Message is required";
+        return false;
+      }
+
+      alert("Form submitted successfully!");
+    }
+  </script>
+<footer>
+  <div class="footer-div">
+  <div class="row">
+    <div class="col">
+      <img src="/images/Microden-logo-1.png" class="Logo2" alt="">
+      <p>We Care for you :) </p>
+    </div>
+    <div class="col">
+      <h3>Office<div class="underline"><span></span></div></h3>
+      <p>Hi-Tech city </p>
+      <p>LP Towers</p>
+      <p>Hyderabad Telangana</p>
+      <p class="email-id">jithinbharadwaj66@gmail.com</p>
+      <h4>+91-9177850186</h4>
+    </div>
+    <div class="col">
+      <h3>Links<div class="underline"><span></span></div></h3>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="About us.html">About</a></li>
+          <li><a href="blog.html">blog</a></li>
+          <li><a href="careers.html">careers</a></li>
+          <li><a href="Contact us.html">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Newsletter <div class="underline"><span></span></div></h3>
+      <form>
+        <i class="fa-solid fa-envelope"></i>
+        <input type="email" placeholder="Enter your email id" required>
+        <button type="submit"><i class="fa-solid fa-envelope"></i></button>
+      </form>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+        <i class="fa-brands fa-pinterest"></i>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <p class="Copyright">Microden © 2023- all rights reserved</p>
+  </div>
+</footer>
+  
+
+</body>
+</html>
